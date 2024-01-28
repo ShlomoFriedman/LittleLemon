@@ -1,9 +1,10 @@
 import React from 'react';
 import logo from './Logo icon.svg';
+import './App.css';
 
 const footer = () => {
     return (
-        <footer>
+        <footer className='app-footer'>
             <nav>
                 <img src={logo}></img>
                 <ul>
@@ -30,3 +31,5 @@ const footer = () => {
         </footer>
     )
 }
+
+export default Footer;
