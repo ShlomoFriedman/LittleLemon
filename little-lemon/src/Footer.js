@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './Logo icon.svg';
 import './App.css';
 
-const footer = () => {
+const Footer = () => {
     return (
         <footer className='app-footer'>
             <nav>
-                <img src={logo}></img>
+                <img src="/Little%20Lemon%20Logo%20Icon.svg" alt="Logo" />
                 <ul>
                     <li>Doormat Navigation</li>
                     <li><a href="#home">Home</a></li>
