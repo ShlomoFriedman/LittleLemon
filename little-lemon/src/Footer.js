@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className='app-footer'>
             <img src="/Little%20Lemon%20Logo%20Icon.svg" alt="Logo" />
             <ul className='doormat navigation'>
-                <li className='doormat navigation'>Doormat Navigation</li>
+                <li className='doormat navigation'><h1 className="menu-title">Doormat Navigation</h1></li>
                 <li className='doormat navigation'><a href="#home">Home</a></li>
                 <li className='doormat navigation'><a href="#about">About</a></li>
                 <li className='doormat navigation'><a href="#reservations">Reservations</a></li>
@@ -14,13 +14,13 @@ const Footer = () => {
                 <li className='doormat navigation'><a href="login">Login</a></li>
             </ul>
             <ul className='contact'>
-                <li className='contact'>Contact</li>
+                <li className='contact'><h1 className="menu-title">Contact</h1></li>
                 <li className='contact'><a href="#address">Address</a></li>
                 <li className='contact'><a href="#phone number">Phone Number</a></li>
                 <li className='contact'><a href="email">Email</a></li>
             </ul>
             <ul>
-                <il className='social media'>Social Media</il>
+                <li className='social media'><h1 className="menu-title">Social Media</h1></li>
                 <li className='social media'><a href="#facebook">Facebook</a></li>
                 <li className='social media'><a href="#tiktok">Tiktok</a></li>
                 <li className='social media'><a href="Instagram">Instagram</a></li>

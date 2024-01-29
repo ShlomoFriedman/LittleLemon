@@ -38,7 +38,7 @@ body {
   color: #000;
   text-align: center;
   font-family: 'Karla', sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 700;
   line-height: normal;
 }
@@ -49,56 +49,158 @@ body {
 }
 
 .app-header ul li a:hover {
-  color: #61dafb; 
+  color: #ff8c00; 
 }
+
+
+
 
 /* Main content styling */
-.app-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+.app-main-hero {
+  background-color: #495E57;
+  display: grid;
+  grid-template-columns: 1.5fr 3fr 3fr 1.5fr;
+  grid-auto-rows: 6;
+  grid-gap: 0px;
 }
 
-/* Footer styling */
-.app-footer{
-  display: flex;
-  background-color: #282c34;
-  color: white;
-  padding: 10px;
+.app-main-hero h1 {
+  grid-column: 2 / 2;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: #F4CE14;
+  font-family: "Markazi Text";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.app-main-hero h2 {
+  grid-column: 2 / 2;
+  margin-top: 0px;
+  margin-bottom: 75px;
+  color: #FFF;
+  font-family: "Markazi Text";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.app-main-hero p {
+  grid-column: 2 / 2;
+  max-width: 750px;
+  margin: 0;
+  color: #FFF;
+  font-family: Karla;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.app-main-hero button {
+  grid-column: 2 / 2;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #1E1E1E;
   text-align: center;
-  color: #000;
-  font-family: Inter;
-  font-size: 17px;
+  font-family: "Open Sans";
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-}
-
-.app-footer > .doormat.navigation ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.app-footer > .doormat.navigation ul li {
-  margin: 0 15px;
-  color: #000;
-  text-align: center;
-  font-family: 'Karla', sans-serif;
-  font-size: 14.064px;
+  align-self: start;
+  backface-visibility: hidden;
+  background-color: #F4CE14;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  width: 227px;
+  height: 69px;
   flex-shrink: 0;
+}
+
+.app-main-hero button:hover {
+  background-color: #ff8c00; /* Darker background color on hover */
+}
+
+.app-main-hero img {
+  grid-column: 3 / 3;
+  grid-row: 3 / 5;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  width: 100%; /* Set the width to 100% to make the image larger */
+  /* You can also set a max-width to control the maximum size */
+  max-width: 400px; /* Adjust the value as needed */
+  /* Optional: Add some margin or padding to create space around the image */
+  margin-left: 50px;
+}
+
+
+
+
+
+/* Footer styling */
+.app-footer {
+  background-color: #657870;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: top;
+}
+
+.app-footer img {
+  width: 75px; /* Adjust the size as needed */
+  height: 75px; /* Adjust the size as needed */
+  padding: 75px;
+}
+
+.app-footer ul {
+  list-style: none;
+  padding: 0;
+
+}
+
+.doormat.navigation,
+.contact,
+.social.media {
+  margin: 15px; /* Use the same margin for all classes */
+}
+
+.doormat.navigation a,
+.contact a,
+.social.media a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.doormat.navigation a:hover,
+.contact a:hover,
+.social.media a:hover {
+  color: #ff8c00; /* Change the color on hover */
+}
+
+.app-footer p {
+  margin-top: 20px; /* Adjust the top margin as needed */
+  width: 100%; /* Make sure the paragraph takes full width */
+  text-align: center; /* Center the text horizontally */
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
 }
 
-.app-footer > .doormat.navigation ul li a {
-  text-decoration: none;
-  color: #000; /* Set the text color to black */
-}
-
-.app-footer > .doormat.navigation ul li a:hover {
-  color: #61dafb; 
+.app-footer h1.menu-title {
+  color: #000000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
