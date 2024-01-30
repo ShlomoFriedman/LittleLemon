@@ -129,18 +129,133 @@ body {
 .app-main-hero img {
   grid-column: 3 / 3;
   grid-row: 3 / 5;
-  align-items: center;
-  justify-content: center;
   align-self: center;
-  width: 100%; /* Set the width to 100% to make the image larger */
-  /* You can also set a max-width to control the maximum size */
-  max-width: 400px; /* Adjust the value as needed */
-  /* Optional: Add some margin or padding to create space around the image */
-  margin-left: 50px;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  max-width: 400px; 
+}
+
+.app-main-highlights {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+.app-main-highlights h1 {
+  grid-column: 2 / 4;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: #000;
+  font-family: "Markazi Text";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.app-main-highlights article {
+  border-radius: 26px;
+  overflow: hidden;
+}
+
+.app-main-highlights article > h3 {
+  color: #000;
+  font-family: Karla;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.app-main-highlights article > p {
+  color: #4B4B4B;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 10px;
+}
+
+.app-main-highlights article > h4 {
+  color: #000;
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.app-main-highlights .meal1{
+  grid-column: 2/2;
+  background-color: #E8E8E8;;
+  justify-self: center;
+  align-items: center;
+  width: 255.717px;
+  height: 396.918px;
+  flex-shrink: 0;
+}
+
+.app-main-highlights .meal2{
+  grid-column: 3/3;
+  background-color: #E8E8E8;;
+  justify-self: center;
+  align-items: center;
+  width: 255.717px;
+  height: 396.918px;
+  flex-shrink: 0;
+}
+
+.app-main-highlights .meal3{
+  grid-column: 4/4;
+  background-color: #E8E8E8;;
+  justify-self: center;
+  align-items: center;
+  width: 255.717px;
+  height: 396.918px;
+  flex-shrink: 0;
+}
+
+.app-main-highlights button {
+  grid-row: 1;
+  grid-column: 4;
+  justify-self: center;
+  align-self: center;
+  width: 231.257px;
+  height: 70.294px;
+  flex-shrink: 0;
+  background-color: #F4CE14;;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.2em;
 }
 
 
+.app-main-testimonials {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
 
+.app-main-testimonials article {
+  display: flex;
+}
 
 
 /* Footer styling */
