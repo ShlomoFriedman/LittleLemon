@@ -1,9 +1,8 @@
 import React from 'react';
-import './App.css';
 
-const Header = () => {
+const Nav = () => {
     return (
-        <header className='app-header'>
+        <header className='app-navbar'>
             <img src="/Little%20Lemon%20Logo.svg" alt="Logo" />
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -16,4 +15,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default Nav;
